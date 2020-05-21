@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".arduino">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blue"
+        android:onClick="checar_bt"
+        app:srcCompat="@drawable/bluetooth"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/eti_BT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="--- Estado del BT"
+        android:textColor="#3366CC"/>
+    <TextView
+        android:id="@+id/angulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="100dp"
+        android:textSize="35dp"
+        android:text="CALIENTE" />
+
+    <SeekBar
+        android:id="@+id/barra_caliente"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="150dp"
+        android:max="90"/>
+
+    <TextView
+        android:id="@+id/angulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="230dp"
+        android:textSize="35dp"
+        android:text="FRIA" />
+
+    <SeekBar
+        android:id="@+id/barra_fria"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="270dp"
+        android:progressTint="#3366CC"
+        android:max="90"/>
+
+    <TextView
+        android:id="@+id/tex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:textSize="16dp"
+        android:text="arduino Servo_1 : " />
+    <TextView
+        android:id="@+id/tex2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:textSize="16dp"
+        android:text="arduino Servo_2 : " />
+    <TextView
+        android:id="@+id/volumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:textSize="25dp"
+        android:text="VOLUMEN : " />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/salir"
+        android:layout_marginTop="500dp"
+        android:text="TERMINAR"
+        android:onClick="terminar"/>
+
+</RelativeLayout>
